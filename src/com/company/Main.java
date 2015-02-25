@@ -148,7 +148,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
 
-        switch (userInput){
+       /** switch (userInput){
             case 1:;
                 break;
             case 2;
@@ -156,7 +156,11 @@ public class Main {
             case 3;
                 break;
             case 4;
-                return;
+                return;**/
+
+       EmployeeInformation employeeInformation  = new EmployeeInformation();
+        employeeInformation.setName("Vle");
+
 
 
         }
@@ -165,4 +169,4 @@ public class Main {
 
 
     }
-}
+
