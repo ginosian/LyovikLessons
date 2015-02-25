@@ -53,7 +53,7 @@ public class Main {
         //Konsloc vercnel tiv, konsoloc vercnel tvi qanakutyamb andamner, hashvel dranc tvabanakn mijiny, mecaguyn ev
         //pokraguyn arjekner@, cucadrel drank ev ays amen@ aranc array ogtagorcelu
 
-        Scanner scanner = new Scanner(System.in);
+       /** Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number");
         int inputQuantity = scanner.nextInt();
 
@@ -81,7 +81,7 @@ public class Main {
             System.out.println(sum);
             System.out.println("The average of the members is " + sum / inputQuantity);
 
-        }
+        }**/
 
         /** ****************************************************************************************** **/
 
@@ -115,7 +115,7 @@ public class Main {
         // grel funkcia vor@ vorpes argument kstana amboxch tveri array ev boolean a8=eq: Ete boolean@ true e
         //apa funkcian trvac array@ kdasavori achman kargov, ete ete hakark@
 
-        int [] myArray = new int [5];
+       /** int [] myArray = new int [5];
         myArray[0] = 8;
         myArray[1] = 5;
         myArray[2] = 4;
@@ -128,7 +128,7 @@ public class Main {
 
         for (int i = 0; i < myArray.length; i++) {
             System.out.println("Array " + i + " = " + myArray[i]);
-        }
+        }**/
         /** ****************************************************************************************** **/
 
         //stexcel mi cragir vor@ kunena konsolayin menyu vor@ hnaravorutyun kta ogtvel hetevyal hramanneric
@@ -137,6 +137,31 @@ public class Main {
         //Cwucadrel ashxatoxneri cucak@ manramasnutyamb
         //Durs gal cragric
         //Ashxatox@ nkaragrvum e anunov azganunov tariqov serov ev ashxatavardzov
+
+        System.out.println("please enter action");
+        System.out.println();
+        System.out.println("1. Add employee");
+        System.out.println("2. Delete employee");
+        System.out.println("3. Show employee information");
+        System.out.println("4. Exit");
+
+        Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();
+
+        switch (userInput){
+            case 1:;
+                break;
+            case 2;
+                break;
+            case 3;
+                break;
+            case 4;
+                return;
+
+
+        }
+
+
 
 
     }
