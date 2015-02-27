@@ -40,8 +40,8 @@ public class EmployeeProfile extends EmployeeInformation {
         this.employeeProfile = employeeProfile;
     }
 
-    public void employeeProfileMaker(){
-        employeeProfile.add(employeeInformation);
+    public void employeeProfileMaker(EmployeeInformation inputEmployeeInformation){
+        employeeProfile.add(inputEmployeeInformation);
 
     }
 

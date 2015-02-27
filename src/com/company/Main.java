@@ -1,7 +1,6 @@
 package com.company;
 
 import java.util.Random;
-import java.util.Scanner;
 
 public class Main {
 
@@ -145,8 +144,26 @@ public class Main {
         System.out.println("3. Show employee information");
         System.out.println("4. Exit");
 
-        Scanner scanner = new Scanner(System.in);
-        int userInput = scanner.nextInt();
+        /**Scanner scanner = new Scanner(System.in);
+        int userInput = scanner.nextInt();**/
+
+        EmployeeInformation employeeInformation1 = new EmployeeInformation();
+        employeeInformation1.employeeInit("Vle", "Vleyan", 'm', 25, 953000.14);
+        EmployeeInformation employeeInformation2 = new EmployeeInformation();
+        employeeInformation1.employeeInit("Arev", "Arevyan", 'f', 23, 913000.14);
+        EmployeeInformation employeeInformation3 = new EmployeeInformation();
+        employeeInformation3.employeeInit("Garik", "Garikyan", 'm', 28, 986000.14);
+
+        EmployeeProfile employeeProfile = new EmployeeProfile();
+        employeeProfile.employeeProfileMaker(employeeInformation1);
+        employeeProfile.employeeProfileMaker(employeeInformation2);
+        employeeProfile.employeeProfileMaker(employeeInformation3);
+
+        EmployiesList employiesList = new EmployiesList();
+        employiesList.employiesListMaker(employeeProfile);
+
+        employiesList.employiesListPrint();
+
 
        /** switch (userInput){
             case 1:;

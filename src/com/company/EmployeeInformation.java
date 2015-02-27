@@ -71,11 +71,11 @@ public class EmployeeInformation {
     }
 
     public void employeeInformationPrint(){
-        System.out.println("Name" + "\t" + getName());
-        System.out.println("Surname" + "\t" + getSurname());
-        System.out.println("Gender" + "\t" + getGender());
-        System.out.println("Age" + "\t" + getAge());
-        System.out.println("Sallary" + "\t" + getSallary());
+        System.out.print("Name" + "\t" + getName()+ ";" + "\t");
+        System.out.print("Surname" + "\t" + getSurname()+ ";" + "\t");
+        System.out.print("Gender" + "\t" + getGender()+ ";" + "\t");
+        System.out.print("Age" + "\t" + getAge()+ ";" + "\t");
+        System.out.print("Sallary" + "\t" + getSallary()+ ";" + "\t");
     }
 
 }

@@ -31,12 +31,15 @@ public class EmployiesList extends EmployeeProfile {
         this.employeeProfile = employeeProfile;
     }
 
-    public void employiesListMaker(){
-        employiesList.add(employeeProfile);
+    public void employiesListMaker(EmployeeProfile inputEmployeeProfile){
+        employiesList.add(inputEmployeeProfile);
     }
 
     public void employiesListPrint(){
         for (int i = 0; i<this.employiesList.size(); i++){
+            System.out.print((i+1) + ". ");
+            employiesList.get(i).employeeInformationPrint();
+            System.out.println();
 
         }
     }
