@@ -1,20 +1,27 @@
 package com.company;
 
+import java.util.ArrayList;
+
 /**
  * Created by Martha on 25.02.15.
  */
 public class EmployeeProfile extends EmployeeInformation {
     private EmployeeInformation employeeInformation;
-    private int age;
-    private double sallary;
+    private ArrayList <EmployeeInformation> employeeProfile;
+
 
     public EmployeeProfile() {
     }
 
-    public EmployeeProfile(EmployeeInformation employeeInformation, int age, double sallary) {
+    public EmployeeProfile(EmployeeInformation employeeInformation, ArrayList<EmployeeInformation> employeeProfile) {
         this.employeeInformation = employeeInformation;
-        this.age = age;
-        this.sallary = sallary;
+        this.employeeProfile = employeeProfile;
+    }
+
+    public EmployeeProfile(String name, String surname, char gender, int age, double sallary, EmployeeInformation employeeInformation, ArrayList<EmployeeProfile> employeeProfile) {
+        super(name, surname, gender, age, sallary);
+        this.employeeInformation = employeeInformation;
+
     }
 
     public EmployeeInformation getEmployeeInformation() {
@@ -25,19 +32,21 @@ public class EmployeeProfile extends EmployeeInformation {
         this.employeeInformation = employeeInformation;
     }
 
-    public int getAge() {
-        return age;
+    public ArrayList<EmployeeInformation> getEmployeeProfile() {
+        return employeeProfile;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setEmployeeProfile(ArrayList<EmployeeInformation> employeeProfile) {
+        this.employeeProfile = employeeProfile;
     }
 
-    public double getSallary() {
-        return sallary;
+    public void employeeProfileMaker(){
+        employeeProfile.add(employeeInformation);
+
     }
 
-    public void setSallary(double sallary) {
-        this.sallary = sallary;
+    public void employeeProfilePrint(){
+
+        employeeInformation.employeeInformationPrint();
     }
 }

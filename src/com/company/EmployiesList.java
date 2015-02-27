@@ -26,12 +26,18 @@ public class EmployiesList extends EmployeeProfile {
         this.employiesList = employiesList;
     }
 
-    public EmployeeProfile getEmployeeProfile() {
-        return employeeProfile;
-    }
 
     public void setEmployeeProfile(EmployeeProfile employeeProfile) {
         this.employeeProfile = employeeProfile;
     }
 
+    public void employiesListMaker(){
+        employiesList.add(employeeProfile);
+    }
+
+    public void employiesListPrint(){
+        for (int i = 0; i<this.employiesList.size(); i++){
+
+        }
+    }
 }

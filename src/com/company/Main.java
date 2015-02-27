@@ -158,8 +158,7 @@ public class Main {
             case 4;
                 return;**/
 
-       EmployeeInformation employeeInformation  = new EmployeeInformation();
-        employeeInformation.setName("Vle");
+
 
 
 
